@@ -11,6 +11,10 @@ fun main() {
     )
     users.forEach { u -> println(u) }
     // User(name=Nicola, surname=Corti)
-    users.forEach { (u) -> println(u) }
+    users.forEach { (u) -> println(u) }// здесь используется неочевидное деструктурирование
     // Nicola
 }
+/*
+User(name=Nicola, surname=Corti)
+Nicola
+ */
