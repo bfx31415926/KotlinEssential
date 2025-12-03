@@ -30,3 +30,15 @@ class Money(
             Money(amount.toBigDecimal(MATH), "PLN")
     }
 }
+
+fun main(){
+    val money1 = Money( BigDecimal(1 ), "USD")
+    val money2 = Money( BigDecimal(2 ), "USD")
+    val moneyBad = Money( BigDecimal(2 ), "USD1")
+    println(( money1 + money2).amount )
+    println(( money1 + moneyBad).amount )
+}
+/*
+3
+... java.lang.IllegalArgumentException: Failed requirement.
+*/

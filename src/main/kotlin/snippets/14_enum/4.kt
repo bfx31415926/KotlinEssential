@@ -11,3 +11,7 @@ fun main() {
     println(option.name) // TRANSFER
     println(option.ordinal) // 2
 }
+/*
+TRANSFER
+2
+ */

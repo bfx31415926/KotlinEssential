@@ -9,13 +9,15 @@ fun String.parseName(): FullName? {
     val indexOfLastSpace = this.trim().lastIndexOf(' ')
     if (indexOfLastSpace < 0) return null
     val firstName = this.take(indexOfLastSpace)
-    val lastName = this.drop(indexOfLastSpace)
+    val lastName = this.drop(indexOfLastSpace).trim()
     return FullName(firstName, lastName)
 }
 
 fun main() {
-    val fullName = "Marcin Moskała"
+    val fullName = "Алексей Смирнов"
     val (firstName, lastName) = fullName.parseName() ?: return
     print("His name is $firstName $lastName")
-    // His name is Marcin Moskała
+    /*
+     His name is Алексей Смирнов
+     */
 }

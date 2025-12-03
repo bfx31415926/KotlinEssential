@@ -16,3 +16,8 @@ fun main() {
         PaymentOption.entries.random()
     println(paymentOption.commission) // 0, 1 or 10
 }
+/*
+10
+0
+0, 1 or 10
+ */

@@ -13,8 +13,11 @@ fun main() {
     // User(name=Nicola, surname=Corti)
     users.forEach { (u) -> println(u) }// здесь используется неочевидное деструктурирование
     // Nicola
+    val (name) = users[0]
+    println(name)
 }
 /*
 User(name=Nicola, surname=Corti)
+Nicola
 Nicola
  */

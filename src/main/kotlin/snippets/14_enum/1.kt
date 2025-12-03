@@ -15,3 +15,7 @@ fun main() {
     println(option) // CARD
     printOption(option) // CARD
 }
+/*
+CARD
+CARD
+ */

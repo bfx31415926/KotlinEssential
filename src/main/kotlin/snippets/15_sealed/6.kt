@@ -1,4 +1,4 @@
-package f_15_sealed.s_6
+//package f_15_sealed.s_6
 
 sealed interface Parent
 class A : Parent
@@ -9,3 +9,6 @@ fun main() {
     println(Parent::class.sealedSubclasses)
     // [class A, class B, class C]
 }
+/*
+[class A, class B, class C]
+ */
