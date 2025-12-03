@@ -16,3 +16,9 @@ fun main() {
     println(d2.fullName) // Cookie Moskała
     println(d2) // FullName(name=Cookie, surname=Moskała)
 }
+/*
+Cookie Moskała
+FullName(name=Cookie, surname=Moskała)
+Cookie Moskała
+FullName(name=Cookie, surname=Moskała)
+ */
