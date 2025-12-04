@@ -14,4 +14,14 @@ fun main() {
     val actionStarts = LocalDateTime.of(1410, 7, 15, 0, 0)
     val actionEnds = actionStarts.plusDays(1)
     println(now in actionStarts..actionEnds) // false
+
+    val dtBegin = LocalDateTime.of(2025, 12, 4, 12, 16)
+    val dtEnd = LocalDateTime.of(2025, 12, 4, 12, 30)
+    val now1 = LocalDateTime.now()
+    println(now1 in dtBegin..dtEnd) // true (если now1 соответствовал, например, 04.12.25 12:19)
 }
+/*
+true
+false
+true
+ */
